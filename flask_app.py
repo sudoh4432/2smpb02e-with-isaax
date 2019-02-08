@@ -20,9 +20,6 @@ def cpu():
     press, temp = sensor.readData()
    # return jsonify(temperature=1, pressure=1)
    #  return jsonify(temperature=round(temp,2), pressure=round(press,2))
-@app.route('/sensor')
-def cpu():
-    press, temp = sensor.readData()
     return jsonify(temperature=round(temp,2), pressure=round(press,2))
 @app.route('/')
 def home():
