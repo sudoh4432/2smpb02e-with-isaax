@@ -26,18 +26,18 @@ Highcharts.chart('chart', {
       }
     },
     title: {
-      text: 'Pressure'
+      text: 'Templerature'
     },
     xAxis: {
       type: 'datetime'
     },
     yAxis: {
       title: {
-        text: 'hPa' 
+        text: 'C' 
       }
     },
     series: [{
-      name: 'Pressure',
+      name: 'Templerature',
       data: (function () {
         let data = [],
             time = (new Date()).getTime(),
